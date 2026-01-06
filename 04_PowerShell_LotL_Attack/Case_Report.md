@@ -53,10 +53,3 @@ The analyst must verify if the attacker successfully modified the target file.
 •	Evidence Source: image_001405.jpg.
 •	Audit Finding: The screenshot shows the hosts file remains in its default state, containing only standard comments and the localhost loopback entry (127.0.0.1).
 •	Conclusion: The threat was detected and contained before any malicious modifications were saved.
-________________________________________
-7. Final Lab Findings Summary
-Phase	Technical Action	Finding / Indicator
-Detection	Filtered Event ID 4103	Captured command execution pipeline telemetry.
-Analysis	Parameter Binding Audit	Identified ArgumentList targeting the system hosts file.
-Containment	Firewall Outbound Block	Isolated host to prevent Command & Control (C2) communication.
-Eradication	Manual File Verification	Confirmed file integrity was preserved (no malicious IP redirects).
